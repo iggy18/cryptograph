@@ -68,7 +68,7 @@ def crack(phrase):
 
 
 
-def run():
+def interface():
     hello = input("\nwhat would you like to do? 'code','decode', 'crack'?\n > ").lower()
 
     if hello == "code":
@@ -88,13 +88,14 @@ def run():
     else:
         print("I don't understand. let's try that again")
 
-def loop():
+def run():
     active = True
     while active:
-        run()
+        interface()
         x = (input("\nwould you like to go again? 'y' or 'n'?\n> "))
         if x == "n":
             active = False
     print("\nthanks for using the code makerbreakercracker 9000")
 
-loop()
+#remove comment from "run" to run command line interface
+#run()
